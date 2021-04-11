@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: rgba(248, 248, 248, 0.5);
+}
+
+.wrapper {
+  display: flex;
+  width: 60%;
+  margin: 50px auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+h2 {
+  text-align: center;
+  color: teal;
+  font-variant: small-caps;
+  /* text-shadow: 1px 1px 2px grey; */
+  margin-top: 30px;
+  font-size: xx-large;
+}
+
+form {
+  padding: 15px 45px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  border-radius: 10px;
+}
+
+.input-box select {
+  width: 30%;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid cadetblue;
+  margin-top: 10px;
+}
+
+.input-group {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 15px;
+  margin: -30px 0px;
+}
+
+input[type="tel"] {
+  width: 90%;
+  padding: 15px;
+  margin: 10px 0px;
+  border-radius: 7px;
+  border: 1px solid teal;
+  outline: none;
+}
+
+input.name {
+  width: 90%;
+  padding: 15px;
+  margin: 10px 0px;
+  border-radius: 7px;
+  border: 1px solid teal;
+  outline: none;
+}
+
+input.dob {
+  width: 28%;
+  padding: 15px;
+  margin: 10px 5px;
+  border-radius: 7px;
+  border: 1px solid teal;
+  outline: none;
+}
+input:focus {
+  background-color: rgba(248, 248, 248, 0.5);
+  border: 1px solid cadetblue;
+}
+
+.input-box {
+  margin-bottom: 0px;
+}
+
+button {
+  background-color: teal;
+  color: white;
+  display: block;
+  padding: 15px 24px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  width: 90%;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+button:hover {
+  background-color: cadetblue;
+  color: white;
+}
+
+h4 {
+  font-size: 16px;
+  font-variant: small-caps;
+  color: teal;
+  border-bottom: 1px solid rgb(212, 208, 208);
+  padding-bottom: 5px;
+}
+form > h4 {
+  font-size: 20px;
+  color: teal;
+}
+
+/* styling icons */
+
+.fa {
+  position: relative;
+  left: -30px;
+}
+
+.icon {
+  color: green;
+}
+
+.fa-envelope {
+  color: orange;
+}
+
+.fa-cc-visa {
+  color: darkblue;
+}
+
+.fa-cc-paypal {
+  color: blue;
+}
+
+.fa-credit-card {
+  color: black;
+}
+
+.fa-cc-visa:before,
+.fa-cc-paypal:before {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+  }
+  form {
+    padding: 10px;
+  }
+
+  input[type="tel"],
+  .name,
+  .dob {
+    width: 100%;
+  }
+
+  .fa {
+    display: none;
+  }
+}
