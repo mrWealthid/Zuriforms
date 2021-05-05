@@ -12,7 +12,6 @@ body {
   width: 60%;
   margin: 50px auto;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 h2 {
@@ -119,15 +118,16 @@ form > h4 {
 
 .fa {
   position: relative;
-  left: -30px;
 }
 
 .icon {
   color: green;
+  left: -30px;
 }
 
 .fa-envelope {
   color: orange;
+  left: -30px;
 }
 
 .fa-cc-visa {
@@ -152,16 +152,10 @@ form > h4 {
     width: 100%;
   }
   form {
-    padding: 10px;
+    padding: 10px 40px;
   }
-
-  input[type="tel"],
   .name,
   .dob {
     width: 100%;
-  }
-
-  .fa {
-    display: none;
   }
 }
